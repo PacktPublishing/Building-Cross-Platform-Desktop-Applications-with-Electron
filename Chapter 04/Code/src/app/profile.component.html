@@ -1,0 +1,28 @@
+<div class=”user-profile-info”>
+	<header>Basic Info</header>
+	<div>
+		<div class=”row”>
+			<div class=”pull-left”>Mobile</div>
+			<div class=”pull-right”>{{mobile}}</div>
+		</div>
+		<div class=”row”>
+			<div class=”pull-left”>Birth Day</div>
+			<div class=”pull-right”>{{data.birthday}}</div>
+		</div>
+
+		<div class=”row”>
+			<div class=”pull-left”>Interested In</div>
+			<div class=”pull-right”>{{data.interested_in.join(‘,’)}}</div>
+		</div>
+
+		<div class=”row”>
+			<div class=”pull-left”>Languages</div>
+			<div class=”pull-right”>
+				<span *ngFor=”let language of data.languages”>
+	{{language.name}},
+	</span>
+			</div>
+		</div>
+
+	</div>
+</div>

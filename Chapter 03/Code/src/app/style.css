@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+	padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #F5f5f5;
+    margin: 0;
+    padding: 0;
+}
+		
+#banner {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: verdana;
+    margin: 10px;
+}
+		
+#shellInfo {
+    margin: 10px;
+    line-height: 2;
+    font-size: 14px;
+    font-family: verdana;
+}
+		
+#viewer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 968px;
+    background-color: #FFF;
+    border: solid 1px #ECECEC;
+    box-shadow: 0 0 15px 0px #ccc;
+    padding: 15px;
+    margin-top: 10px;
+}
+		
+#process-info {
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Tahoma;
+    color: #333;
+}

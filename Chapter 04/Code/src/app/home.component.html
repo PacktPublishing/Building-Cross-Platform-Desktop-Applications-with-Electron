@@ -1,0 +1,31 @@
+<div class="container">
+	<div class="header">
+		<h1>Facebook</h1>
+	</div>
+	<div class="cover-holder">
+		<div class="cover">
+			<img src="{{coverImage}}" alt="" />
+		</div>
+		<div class="profile-pic">
+			<div class="profile-name">
+				<h1>{{name}}</h1>
+			</div>
+		</div>
+	</div>
+	<div class="button-holder">
+		<a href="#" (click)=”selectedTabIndex=1”>Profile</a>
+		<a href="#" (click)=”selectedTabIndex=2”>>Posts</a>
+		<a href="#" (click)=”selectedTabIndex=3”>>Friends</a>
+	</div>
+
+	<div class="posts-box">
+		<textarea placeholder="Whats on your mind ?"></textarea>
+		<a href="#" class="post-btn">Post</a>
+	</div>
+	<div class="container">
+		<user-profile *ngIf=”selectedTabIndex==1 ” [data]=”profile”></user-profile>
+		<div *ngIf=”selectedTabIndex==2 ”></div>
+		<div *ngIf=”selectedTabIndex==3 ”></div>
+	</div>
+
+</div>

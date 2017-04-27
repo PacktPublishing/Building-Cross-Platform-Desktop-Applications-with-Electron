@@ -1,0 +1,81 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add devtron --dev
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  0.16.1
+
+Node version: 
+  7.0.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "app",
+    "productName": "App",
+    "version": "0.0.0",
+    "description": "",
+    "license": "MIT",
+    "repository": "user/repo",
+    "author": {
+      "name": "",
+      "email": "",
+      "url": ""
+    },
+    "scripts": {
+      "test": "xo",
+      "start": "electron .",
+      "build": "electron-packager . --out=dist --asar --overwrite --all"
+    },
+    "files": [
+      "index.js",
+      "index.html",
+      "index.css"
+    ],
+    "keywords": [
+      "electron-app",
+      "electron"
+    ],
+    "dependencies": {
+      "electron-debug": "^1.0.0"
+    },
+    "devDependencies": {
+      "devtron": "^1.1.0",
+      "electron-packager": "^8.0.0",
+      "electron": "^1.0.1",
+      "xo": "^0.16.0"
+    },
+    "xo": {
+      "esnext": true,
+      "envs": [
+        "node",
+        "browser"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+bower manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/electron: tunneling socket could not be established, statusCode=407
+      at ClientRequest.onConnect (/usr/local/lib/node_modules/yarn/node_modules/request/node_modules/tunnel-agent/index.js:165:19)
+      at ClientRequest.g (events.js:291:16)
+      at emitThree (events.js:116:13)
+      at ClientRequest.emit (events.js:194:7)
+      at Socket.socketOnData (_http_client.js:394:11)
+      at emitOne (events.js:96:13)
+      at Socket.emit (events.js:188:7)
+      at readableAddChunk (_stream_readable.js:176:18)
+      at Socket.Readable.push (_stream_readable.js:134:10)
+      at TCP.onread (net.js:551:20)

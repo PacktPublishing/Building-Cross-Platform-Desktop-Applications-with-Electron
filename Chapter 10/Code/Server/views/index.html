@@ -1,0 +1,27 @@
+<!DOCTYPE html />
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="/assets/css/style.css" />
+
+</head>
+
+<body>
+    <h1>Server is up and running</h1>
+    <script type="text/javascript" src=" /assets/scripts/script.js "></script>
+    <script typ="text/javascript">
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/assets/sw.js', { scope: '/' })
+                .then(function (reg) {
+                    // registration worked
+                    console.log('Registration succeeded. Scope is ' + reg.scope);
+                }).catch(function (error) {
+                    // registration failed
+                    console.log('Registration failed with ' + error);
+                });
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+body * {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 414px;
+			margin: auto;
+			min-height: 400px;
+			border: 1px solid #3b5998;
+			background: linear-gradient(white, #e4e8f5);
+		}
+		.header {
+			height: 50px;
+			width: 100%;
+			background-color: #3b5998;
+			border-bottom: 1px solid #29487d;
+			color: #fff;
+		}
+		.profile-pic {
+			width: 100%;
+			background-size: 100%;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			bottom: 0;
+		}
+		.avatar {
+			position: relative;
+			bottom: 20px;
+			height: 80px;
+			width: 80px;
+			border: 1px solid #ddd;
+			left: 5%;
+			float: left;
+			display: inline-block;
+		}
+		.profile-pic img,
+		.avatar img {
+			max-width: 100%;
+			height: auto;
+		}
+		.profile-name {
+			position: relative;
+			height: auto;
+			bottom: 0px;
+			float: left;
+			display: block;
+			margin-right: 20px;
+			left: 8%;
+			width: 68%;
+		}
+		.profile-name h1 {
+			color: #FFF;
+			font-family: 'helvetica', arial;
+			font-size: 23px;
+			text-shadow: 1px 1px 4px #111;
+		}
+		.button-holder {
+			margin: auto;
+			text-align: center;
+			background: #FFF;
+			border-bottom: 1px solid #a5aab3;
+			clear: both;
+			position: relative;
+			margin-top: -3px !important;
+			background: #ffffff;
+			/* Old browsers */
+			background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+			/* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+			/* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+			/* IE6-9 */
+			border-top: 1px solid #f6f6f6;
+		}
+		.button-holder a {
+			padding: 18px 20px 18px 20px;
+			text-decoration: none;
+			font-size: 14px;
+			font-family: 'helvetica', arial;
+			color: #333;
+			border-radius: 3px 3px;
+			width: 19.33%;
+			display: inline-block;
+			border-left: 1px solid #dedede;
+			font-weight: bold;
+		}
+		.button-holder a:first-child {
+			border: none !important;
+		}
+		.cover {
+			height: auto;
+			position: relative;
+			background: #a5aab3;
+		}
+		.cover img {
+			max-width: 100%;
+			height: auto;
+		}
+		.cover-holder {
+			position: relative;
+			display: inline-block;
+		}
+		.posts-box {
+			padding: 20px;
+		}
+		.post-card-holder {
+			padding: 20px;
+			clear: both;
+			margin-bottom: 40px;
+		}
+		.posts-box textarea {
+			background: #FFF;
+			border: 1px solid #a5aab3;
+			padding: 10px 10px 10px 10px;
+			height: 70px;
+			width: 94%;
+			font-family: 'helvetica', arial;
+			margin-bottom: 5px;
+		}
+		.post-btn {
+			border-color: #29447e #29447e #1a356e;
+			color: #fff;
+			background-color: #5B74A8;
+			background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#637bad), to(#5872a7));
+			background-image: -moz-linear-gradient(#637bad, #5872a7);
+			background-image: -o-linear-gradient(#637bad, #5872a7);
+			background-image: linear-gradient(#637bad, #5872a7);
+			-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
+			-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
+			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
+			margin: 0;
+			text-decoration: none;
+			text-align: center;
+			font: bold 11px/normal 'lucida grande', tahoma, verdana, arial, sans-serif;
+			white-space: nowrap;
+			cursor: pointer;
+			position: relative;
+			z-index: 1;
+			overflow: visible;
+			display: inline-block;
+			padding: 8px;
+			float: right;
+		}
+		.post-avatar {
+			float: left;
+			padding: 8px;
+			height: 32px;
+			width: 32px;
+		}
+		.post-details {
+			float: left;
+			display: inline-block;
+			padding: 8px;
+		}
+		span.activity {
+			color: #a5aab3 !important;
+			font-weight: normal !important;
+			padding: 8px;
+		}
+		span.post-date {
+			float: left;
+			width: 100%;
+			clear: both;
+			margin-top: 5px;
+			font-weight: normal;
+			color: #a5aab3;
+		}
+		.post-text {
+			clear: both;
+			margin-bottom: 20px;
+			display: inline-block;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 20px;
+			padding: 8px;
+		}
+		img.post-img-responsive {
+			max-width: 100%;
+			height: auto;
+		}
+		.header h1 {
+			padding: 11px;
+			font-size: 25px;
+			font-family: 'helvetica', arial;
+		}
+		.post-avatar img {
+			max-width: 100%;
+			height: auto;
+ }

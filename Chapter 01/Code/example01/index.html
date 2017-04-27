@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+	<title>Hello Electron</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		#banner {
+			font-size: 22px;
+			font-weight: bold;
+			font-family: verdana;
+			margin: 10px;
+		}
+		
+		#shellInfo {
+			margin: 10px;
+			line-height: 2;
+			font-size: 14px;
+			font-family: verdana;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="banner">Electron is up and running.</div>
+	<div id="shellInfo">
+		<div>Node: <script>document.write(process.versions.node)</script></div>
+		<div>Chrome: <script>document.write(process.versions.chrome)</script></div>
+		<div>Electron: <script>document.write(process.versions.electron)</script></div>
+	</div>
+</body>
+
+</html>
