@@ -1,0 +1,24 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #F5F5F5;
+}
+
+#viewer {
+  margin: 10px auto 0 auto;
+  max-width: 968px;
+  background-color: #FFF;
+  border: solid 1px #ECECEC;
+  box-shadow: 0 0 15px 0 #CCC;
+  padding: 15px;
+}
+
+#process-info {
+  padding: 30px;
+  text-align: center;
+  font-size: 12px;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}

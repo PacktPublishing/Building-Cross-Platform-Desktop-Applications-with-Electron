@@ -1,0 +1,56 @@
+<!DOCTYPE html />
+<html>
+
+<head>
+  <base href="./">
+  <title>Hello Electron</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style type="text/css">
+    #banner {
+      font-size: 22px;
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 10px;
+    }
+
+    #shellInfo {
+      margin: 10px;
+      line-height: 2;
+      font-size: 14px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  </style>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+      const { node, chrome, electron } = process.versions;
+      document.querySelector('#nodeVersion').innerHTML = node;
+      document.querySelector('#chromeVersion').innerHTML = chrome;
+      document.querySelector('#electronVersion').innerHTML = electron;
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <div id="banner">Electron is up and running.</div>
+  <div id="shellInfo">
+    <div>Node: <span id="nodeVersion"></span></div>
+    <div>Chrome: <span id="chromeVersion"></span></div>
+    <div>Electron: <span id="electronVersion"></span></div>
+  </div>
+
+  <div id="viewer">
+  </div>
+
+  <script type="text/javascript">
+    require('./markdown-processor');
+  </script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="github-markdown.css" />
+</body>
+
+</html>

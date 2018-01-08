@@ -1,0 +1,17 @@
+{
+  "name": "example04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && electron main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/node": "^8.0.28",
+    "electron": "^1.7.6",
+    "typescript": "^2.5.2"
+  }
+}

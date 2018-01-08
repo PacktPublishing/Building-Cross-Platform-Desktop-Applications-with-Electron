@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+	padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #F5f5f5;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+	
+#shellInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 10px;
+    line-height: 2;
+	font-size: 14px;
+	font-family: verdana;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#shellInfo h1  {
+    margin: 10px;
+    color: #333;
+}
+
+#shellInfo table {
+    border: solid 1px #CCC;
+    border-collapse: collapse;
+}
+
+#shellInfo table tr td {
+    padding: 10px;
+    border: solid 1px #CCC;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

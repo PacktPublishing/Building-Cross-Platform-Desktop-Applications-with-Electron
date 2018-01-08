@@ -1,0 +1,47 @@
+<div class="app-container">
+
+  <header class="app-header">
+    <section class="quicklaunch-bar">
+      <div class="app-logo">
+        <span class="app-logo__title">Customer Manager</span>
+      </div>
+    </section>
+  </header>
+
+  <div class="app-body">
+    <div class="app-list">
+      <ul>
+        <li [ngClass]="{ 'active': customer.id === _customer.id }" *ngFor="let _customer of customers;let idx = index">
+          <a (click)="setCustomer(_customer, idx)">{{_customer.customer_name}}</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="app-form">
+        <div class="form-group">
+          <label>Customer Name</label>
+          <input type="text" style="width: 300px" class="input" [(ngModel)]="customer.customer_name" />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="text" class="input" style="width: 300px" [(ngModel)]="customer.customer_email" />
+        </div>
+        <div class="form-group">
+          <label>Address</label>
+          <input type="text" class="input" style="width: 300px" [(ngModel)]="customer.customer_address" />
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="text" class="input" style="width: 300px" [(ngModel)]="customer.customer_mobile" />
+        </div>
+
+        <div class="cta-wrapper">
+          <button class="btn btn-default" (click)="addNewCustomer()">Add</button>
+          <button class="btn btn-primary" (click)="saveCustomer()">Save</button>
+          <button class="btn btn-primary" (click)="cancel()">Cancel</button>
+          <button class="btn btn-primary" (click)="deleteCustomer()">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

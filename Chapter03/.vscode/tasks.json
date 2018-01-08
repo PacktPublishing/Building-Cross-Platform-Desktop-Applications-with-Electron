@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "taskName": "build",
+      "command": "npm run build",
+      "type": "shell"
+    },
+    {
+      "taskName": "watch",
+      "command": "npm run watch",
+      "type": "shell"
+    },
+    {
+      "taskName": "start",
+      "command": "npm run start",
+      "type": "shell",
+      "problemMatcher": []
+    }
+  ]
+}

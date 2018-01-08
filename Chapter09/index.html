@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Electron boilerplate</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1>Electron boilerplate</h1>
+		</header>
+		<section class="main">
+
+			<button onclick="notify()">
+				Notify
+			</button>
+			<div>
+				<input id="range" type="range" onchange="change()" />
+			</div>
+		</section>
+		<footer></footer>
+	</div>
+	<script>
+											 const notifier = require('node-notifier');
+											 const path = require('path');
+											 const osxBrightness = require('osx-brightness');
+											 function notify() {
+												 notifier.notify({
+													 title: 'You have 10 unread mail',
+													 message: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
+													 icon: path.join(__dirname, 'image.jpg'),
+													 sound: true,
+													 wait: true
+												 }, (error, response) => {
+
+												 });
+											 }
+
+											 function change() {
+												 let value = document.getElementById('range').value;
+												 osxBrightness.set(value / 100).then(() => {
+													 console.log('Changed brightness to ' + value / 100);
+												 });
+												 window.onload = () => {
+													 let notification = new Notification('Your Notification Title', {
+														 body: 'Notification content goes here'
+													 });
+
+													 // Attaching various events on the notification
+													 notification.onclick = () => {
+														 console.log('Clicked on the notification');
+													 };
+
+													 notification.onshow = () => {
+														 console.log('Showing the notification on screen');
+													 };
+
+													 notification.onclode = () => {
+														 console.log('Notification closed')
+													 };
+												 }
+	</script>
+</body>
+
+</html>

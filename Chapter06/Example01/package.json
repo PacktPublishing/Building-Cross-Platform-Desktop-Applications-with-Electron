@@ -1,0 +1,53 @@
+{
+  "name": "fbclient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "@angular/common": "^4.3.4",
+    "@angular/compiler": "^4.3.4",
+    "@angular/core": "^4.3.4",
+    "@angular/forms": "^4.3.4",
+    "@angular/http": "^4.3.4",
+    "@angular/platform-browser": "^4.3.4",
+    "@angular/platform-browser-dynamic": "^4.3.4",
+    "@angular/router": "^4.3.4",
+    "core-js": "^2.5.0",
+    "electron": "^1.7.5",
+    "fast-deep-equal": "^1.0.0",
+    "json-schema-traverse": "^0.3.1",
+    "mysql": "^2.14.1",
+    "path": "^0.12.7",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.4.3",
+    "systemjs": "^0.20.17",
+    "webpack-target-electron-renderer": "^0.4.0",
+    "zone.js": "^0.8.16"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.42",
+    "@types/electron": "^1.6.10",
+    "@types/mysql": "^0.0.34",
+    "@types/node": "^8.0.20",
+    "angular2-template-loader": "^0.6.2",
+    "awesome-typescript-loader": "^3.2.2",
+    "css-loader": "^0.28.4",
+    "devtron": "^1.4.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.18.2",
+    "ts-loader": "^2.3.2",
+    "typescript": "^2.4.2",
+    "webpack": "^3.5.4",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "scripts": {
+    "start": "webpack && electron .",
+    "server": "webpack-dev-server --inline --progress --port 3000 --config webpack.config.js --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
