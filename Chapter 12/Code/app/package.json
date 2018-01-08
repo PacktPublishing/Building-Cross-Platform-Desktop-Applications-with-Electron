@@ -1,6 +1,0 @@
-{
-  "name": "ElectronApp",
-  "version": "0.0.0",
-  "description": "Electron",
-  "main": "main.js"
-}
